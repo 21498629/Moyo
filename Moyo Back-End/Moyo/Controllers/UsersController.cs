@@ -62,6 +62,11 @@ namespace Moyo.Controllers
                 if (!result.Succeeded)
                     return StatusCode(500, result.Errors);
 
+                // Assign default "User" role to new registrations
+                var roleResult = await _userManager.AddToRoleAsync(user, "User");
+                if (!roleResult.Succeeded)
+                    return StatusCode(500, roleResult.Errors);
+
                 var roles = await _userManager.GetRolesAsync(user);
                 var token = _tokenService.CreateToken(user, roles, new[] { "api.read" });
 
@@ -134,7 +139,7 @@ namespace Moyo.Controllers
         // GET ALL USERS
         [HttpGet]
         [Route("GetAllUsers")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "1")]
         public async Task<IActionResult> GetAllUsers()
         {
             try
@@ -169,7 +174,7 @@ namespace Moyo.Controllers
 
         // ADD USER
         [HttpPost("AddUser")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddUser([FromBody] UserVM uvm)
         {
             try

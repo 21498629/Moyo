@@ -12,6 +12,12 @@
     <a routerLink="/orders" routerLinkActive="active" class="nav-item">
       <span class="nav-icon">📄</span> Orders
     </a>
+    <a routerLink="/product-management" routerLinkActive="active" class="nav-item" *ngIf="isAdmin()">
+      <span class="nav-icon">⚙️</span> Product Management
+    </a>
+    <a routerLink="/vendor-management" routerLinkActive="active" class="nav-item" *ngIf="isAdmin()">
+      <span class="nav-icon">🏢</span> Vendor Management
+    </a>
   </div>
   
   <div class="navbar-footer">

@@ -103,7 +103,7 @@ namespace Moyo.Controllers
         // ADD PRODUCT
         [HttpPost]
         [Route("AddProduct")]
-        //[Authorize("Admin, Vendor")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddProduct([FromForm] ProductVM pvm)
         {
             if (!ModelState.IsValid)
@@ -180,7 +180,7 @@ namespace Moyo.Controllers
         // EDIT PRODUCT
         [HttpPut]
         [Route("EditProduct/{id}")]
-        //[Authorize("Admin, Vendor")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> EditProduct(int id, [FromForm] ProductVM pvm)
         {
             if (!ModelState.IsValid)

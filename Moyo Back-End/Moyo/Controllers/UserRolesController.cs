@@ -14,7 +14,7 @@ namespace Moyo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     public class UserRolesController : ControllerBase
     {
         private readonly AppDbContext _context;

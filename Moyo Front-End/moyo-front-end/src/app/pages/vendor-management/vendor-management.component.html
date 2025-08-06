@@ -1,0 +1,83 @@
+<div class="vendor-management-container">
+  <div class="header-section">
+    <h1>Vendor Management</h1>
+    <div class="header-controls">
+      <button class="add-btn" (click)="showAddVendorForm()">+ Add New Vendor</button>
+      <div class="search-bar">
+        <input 
+          type="text" 
+          [(ngModel)]="searchTerm" 
+          (input)="onSearch()" 
+          placeholder="Search vendors..."
+          class="search-input">
+      </div>
+    </div>
+  </div>
+
+  <!-- Add/Edit Form -->
+  <div class="form-overlay" *ngIf="showAddForm">
+    <div class="form-container">
+      <h2>{{ editingVendor ? 'Edit Vendor' : 'Add New Vendor' }}</h2>
+      <form (ngSubmit)="saveVendor()">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name *</label>
+            <input type="text" [(ngModel)]="newVendor.name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" [(ngModel)]="newVendor.email" name="email" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone *</label>
+            <input type="tel" [(ngModel)]="newVendor.phone" name="phone" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Address</label>
+          <textarea [(ngModel)]="newVendor.address" name="address" rows="3"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="save-btn">{{ editingVendor ? 'Update' : 'Save' }}</button>
+          <button type="button" class="cancel-btn" (click)="cancelForm()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Vendors Table -->
+  <div class="table-container">
+    <table class="vendors-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vendor of filteredVendors">
+          <td>{{vendor.name}}</td>
+          <td>{{vendor.email}}</td>
+          <td>{{vendor.phone}}</td>
+          <td>{{vendor.address}}</td>
+          <td>
+            <button class="edit-btn" (click)="editVendor(vendor)">Edit</button>
+            <button class="delete-btn" (click)="deleteVendor(vendor.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div *ngIf="filteredVendors.length === 0" class="no-data">
+      <p>No vendors found.</p>
+    </div>
+  </div>
+</div>

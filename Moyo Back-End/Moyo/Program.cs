@@ -41,7 +41,6 @@ builder.Services.AddIdentity<User, IdentityRole<int>>(options =>
     options.Password.RequireNonAlphanumeric = true;
     options.Password.RequiredLength = 10;
 })
-  //.AddRoles<Role>()
   .AddEntityFrameworkStores<AppDbContext>()
   .AddDefaultTokenProviders();
   //.AddSignInManager<SignInManager<User>>()

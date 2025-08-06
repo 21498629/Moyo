@@ -1,0 +1,119 @@
+<div class="product-management-container">
+  <div class="header-section">
+    <h1>Product Management</h1>
+    <div class="header-controls">
+      <button class="add-btn" (click)="showAddProductForm()">+ Add New Product</button>
+      <div class="search-bar">
+        <input 
+          type="text" 
+          [(ngModel)]="searchTerm" 
+          (input)="onSearch()" 
+          placeholder="Search products..."
+          class="search-input">
+      </div>
+    </div>
+  </div>
+
+  <!-- Add/Edit Form -->
+  <div class="form-overlay" *ngIf="showAddForm">
+    <div class="form-container">
+      <h2>{{ editingProduct ? 'Edit Product' : 'Add New Product' }}</h2>
+      <form (ngSubmit)="saveProduct()">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name *</label>
+            <input type="text" [(ngModel)]="newProduct.name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>Price *</label>
+            <input type="text" [(ngModel)]="newProduct.price" name="price" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label>Category *</label>
+            <select [(ngModel)]="newProduct.categoryId" name="categoryId" required>
+              <option value="0">Select Category</option>
+              <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Vendor *</label>
+            <select [(ngModel)]="newProduct.venderId" name="venderId" required>
+              <option value="0">Select Vendor</option>
+              <option *ngFor="let vendor of vendors" [value]="vendor.id">{{vendor.name}}</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Quantity *</label>
+            <input type="number" [(ngModel)]="newProduct.quantity" name="quantity" required min="0">
+          </div>
+          <div class="form-group">
+            <label>Image URL</label>
+            <input type="text" [(ngModel)]="newProduct.image" name="image">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <textarea [(ngModel)]="newProduct.description" name="description" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" [(ngModel)]="newProduct.isActive" name="isActive">
+            Active
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="save-btn">{{ editingProduct ? 'Update' : 'Save' }}</button>
+          <button type="button" class="cancel-btn" (click)="cancelForm()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Products Table -->
+  <div class="table-container">
+    <table class="products-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Vendor</th>
+          <th>Quantity</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of filteredProducts">
+          <td>{{product.name}}</td>
+          <td>R{{product.price}}</td>
+          <td>{{getCategoryName(product.categoryId)}}</td>
+          <td>{{getVendorName(product.venderId)}}</td>
+          <td>{{product.quantity}}</td>
+          <td>
+            <span class="status" [class.active]="product.isActive" [class.inactive]="!product.isActive">
+              {{product.isActive ? 'Active' : 'Inactive'}}
+            </span>
+          </td>
+          <td>
+            <button class="edit-btn" (click)="editProduct(product)">Edit</button>
+            <button class="delete-btn" (click)="deleteProduct(product.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div *ngIf="filteredProducts.length === 0" class="no-data">
+      <p>No products found.</p>
+    </div>
+  </div>
+</div>

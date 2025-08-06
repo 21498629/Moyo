@@ -160,6 +160,50 @@ export class DataService {
         return this.httpClient.get<Product[]>(`${this.apiUrl}Products/GetAllProducts`);
     }
 
+    // Synchronous methods for local data
+    getCategories(): ProductCategory[] {
+        return [
+            { id: 1, name: 'Electronics', description: 'Electronic devices and accessories' },
+            { id: 2, name: 'Clothing', description: 'Apparel and fashion items' },
+            { id: 3, name: 'Home & Garden', description: 'Home improvement and garden supplies' },
+            { id: 4, name: 'Sports', description: 'Sports equipment and accessories' }
+        ];
+    }
+
+    getVendors(): Vendor[] {
+        return [
+            { id: 1, name: 'ABC Suppliers', email: 'contact@abcsuppliers.com', address: '123 Business Street', phone: '+1234567890' },
+            { id: 2, name: 'XYZ Trading', email: 'info@xyztrading.com', address: '456 Commerce Ave', phone: '+0987654321' },
+            { id: 3, name: 'Global Imports', email: 'sales@globalimports.com', address: '789 Trade Center', phone: '+1122334455' }
+        ];
+    }
+
+    // VENDOR CRUD OPERATIONS
+    AddVendor(vendor: Vendor): Observable<Vendor> {
+        return this.httpClient.post<Vendor>(`${this.apiUrl}Vendors/AddVendor`, vendor, this.httpOptions);
+    }
+
+    UpdateVendor(vendor: Vendor): Observable<Vendor> {
+        return this.httpClient.put<Vendor>(`${this.apiUrl}Vendors/UpdateVendor`, vendor, this.httpOptions);
+    }
+
+    DeleteVendor(id: number): Observable<any> {
+        return this.httpClient.delete(`${this.apiUrl}Vendors/DeleteVendor/${id}`, this.httpOptions);
+    }
+
+    // PRODUCT CRUD OPERATIONS
+    AddProduct(product: Product): Observable<Product> {
+        return this.httpClient.post<Product>(`${this.apiUrl}Products/AddProduct`, product, this.httpOptions);
+    }
+
+    UpdateProduct(product: Product): Observable<Product> {
+        return this.httpClient.put<Product>(`${this.apiUrl}Products/UpdateProduct`, product, this.httpOptions);
+    }
+
+    DeleteProduct(id: number): Observable<any> {
+        return this.httpClient.delete(`${this.apiUrl}Products/DeleteProduct/${id}`, this.httpOptions);
+    }
+
     // ORDER
 
     // ORDER ITEMS

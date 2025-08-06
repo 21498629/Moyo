@@ -32,7 +32,7 @@ export class NavbarComponent implements OnInit {
   }
 
   isAdmin(): boolean {
-    return this.dataService.hasRole('Admin');
+    return this.dataService.hasRole('Administrator') || this.dataService.hasRole('Admin');
   }
 
   canAccessOrders(): boolean {

@@ -61,7 +61,7 @@ namespace Moyo.Controllers
         // EDIT VENDOR
         [HttpPut]
         [Route("EditVendor/{VendorID}")]
-        //[Authorize(Roles = "Admin, Vendor")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<VendorVM>> EditVendor(int vendorID, VendorVM vvm)
 
         {
@@ -91,7 +91,7 @@ namespace Moyo.Controllers
         // ADD VENDOR
         [HttpPost]
         [Route("AddVendor")]
-        //[Authorize(Roles = "Admin, Vendor")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> AddVendor(VendorVM vvm)
         {
             
@@ -122,7 +122,7 @@ namespace Moyo.Controllers
         // DELETE VENDOR
         [HttpDelete]
         [Route("DeleteVendor/{VendorID}")]
-        //[Authorize(Roles = "Admin, Vendor")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> DeleteVendor(int vendorID)
         {
             try
