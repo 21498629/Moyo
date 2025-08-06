@@ -1,6 +1,0 @@
-@Moyo_HostAddress = http://localhost:5151
-
-GET {{Moyo_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
