@@ -25,7 +25,8 @@ namespace Moyo.Models
                 new Claim(JwtRegisteredClaimNames.Email, user.Email ?? ""),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.UserName ?? user.Email ?? "")
+                new Claim(ClaimTypes.Name, user.UserName ?? user.Email ?? ""),
+                new Claim("name", user.Name ?? ""),
             };
 
             // ROLES

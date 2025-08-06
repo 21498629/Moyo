@@ -13,7 +13,6 @@ using Moyo.View_Models;
 
 namespace Moyo.Controllers
 {
-    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -135,6 +134,7 @@ namespace Moyo.Controllers
         // GET ALL USERS
         [HttpGet]
         [Route("GetAllUsers")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllUsers()
         {
             try
@@ -169,6 +169,7 @@ namespace Moyo.Controllers
 
         // ADD USER
         [HttpPost("AddUser")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddUser([FromBody] UserVM uvm)
         {
             try

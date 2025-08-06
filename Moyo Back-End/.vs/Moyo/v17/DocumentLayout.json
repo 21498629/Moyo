@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\controllers\\productcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\controllers\\productcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\controllers\\vendorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\controllers\\vendorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\models\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\models\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\view models\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\view models\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|c:\\users\\fifik\\source\\repos\\moyo\\moyo back-end\\moyo\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FB80504-D221-4DAA-BF5A-FA71BED95E72}|Moyo\\Moyo.csproj|solutionrelative:moyo\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,12 +63,142 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Moyo\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Moyo\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAswAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:08:04.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VendorsController.cs",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\VendorsController.cs",
+              "RelativeDocumentMoniker": "Moyo\\Controllers\\VendorsController.cs",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\VendorsController.cs",
+              "RelativeToolTip": "Moyo\\Controllers\\VendorsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T03:59:02.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Models\\TokenService.cs",
+              "RelativeDocumentMoniker": "Moyo\\Models\\TokenService.cs",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Models\\TokenService.cs",
+              "RelativeToolTip": "Moyo\\Models\\TokenService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T03:21:19.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Program.cs",
+              "RelativeDocumentMoniker": "Moyo\\Program.cs",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Program.cs",
+              "RelativeToolTip": "Moyo\\Program.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAAAMsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T01:58:02.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductCategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\ProductCategoriesController.cs",
+              "RelativeDocumentMoniker": "Moyo\\Controllers\\ProductCategoriesController.cs",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\ProductCategoriesController.cs",
+              "RelativeToolTip": "Moyo\\Controllers\\ProductCategoriesController.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAA9wA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:08:38.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\appsettings.json",
+              "RelativeDocumentMoniker": "Moyo\\appsettings.json",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\appsettings.json",
+              "RelativeToolTip": "Moyo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-06T02:38:39.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Moyo\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Moyo\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T00:38:12.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Moyo\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Moyo\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T21:51:50.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderVM.cs",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\View Models\\OrderVM.cs",
+              "RelativeDocumentMoniker": "Moyo\\View Models\\OrderVM.cs",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\View Models\\OrderVM.cs",
+              "RelativeToolTip": "Moyo\\View Models\\OrderVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T21:51:44.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Moyo\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Models\\Order.cs",
+              "RelativeToolTip": "Moyo\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T21:51:40.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "Moyo\\Controllers\\OrdersController.cs",
               "ToolTip": "C:\\Users\\fifik\\source\\repos\\Moyo\\Moyo Back-End\\Moyo\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "Moyo\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T21:43:46.606Z",
               "EditorCaption": ""

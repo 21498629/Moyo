@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Moyo.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductCategoriesController : ControllerBase
@@ -61,7 +61,7 @@ namespace Moyo.Controllers
         }
 
         // ADD PRODUCT CATEGORY
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpPost]
         [Route("AddProductCategory")]
         public async Task<IActionResult> AddProductCategory(ProductCategoryVM cvm)
@@ -86,7 +86,7 @@ namespace Moyo.Controllers
         }
 
         // EDIT PRODUCT CATEGORY
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpPut]
         [Route("EditProductCategory/{CategoryID}")]
         public async Task<ActionResult<ProductCategoryVM>> EditProductCategory(int CategoryID, ProductCategoryVM cvm)
@@ -114,7 +114,7 @@ namespace Moyo.Controllers
         }
 
         // DELETE PRODUCT CATEGORY
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpDelete]
         [Route("DeleteProductCategory/{CategoryID}")]
         public async Task<IActionResult> DeleteCategory(int CategoryID)

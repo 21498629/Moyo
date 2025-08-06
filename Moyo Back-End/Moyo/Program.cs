@@ -5,8 +5,21 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Moyo.Models;
 using Moyo.View_Models;
 using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
+
+const string AllowAngular = "AllowAngular";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(AllowAngular, policy =>
+    {
+        policy.WithOrigins("http://localhost:4200") 
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+        // .AllowCredentials(); // ONLY if you use cookies/withCredentials
+    });
+});
 
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -182,6 +195,15 @@ foreach (var roleName in roles)
 }
 
 app.UseHttpsRedirection();
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "Images")),
+    RequestPath = "/Images"
+});
+
+
+app.UseCors("AllowAngular");
 
 app.UseAuthentication();
 
