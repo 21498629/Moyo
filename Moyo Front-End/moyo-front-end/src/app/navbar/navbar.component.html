@@ -1,0 +1,22 @@
+<nav class="navbar" *ngIf="isAuthenticated()">
+  <div class="navbar-header">
+    <div class="user-info">
+      <span class="user-name">{{ userName }}</span>
+    </div>
+  </div>
+  
+  <div class="navbar-menu">
+    <a routerLink="/products" routerLinkActive="active" class="nav-item">
+      <span class="nav-icon">🛍</span> Products
+    </a>
+    <a routerLink="/orders" routerLinkActive="active" class="nav-item">
+      <span class="nav-icon">📄</span> Orders
+    </a>
+  </div>
+  
+  <div class="navbar-footer">
+    <button class="logout-btn" (click)="onLogout()">
+      Logout
+    </button>
+  </div>
+</nav>
